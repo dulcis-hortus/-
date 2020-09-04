@@ -192,11 +192,6 @@ header .contents > a .fa-apple {
 #header-top .contents .hot-keywords h3 {
     padding-bottom: 35px;
     border-bottom: 2px solid var(--color-light-gray);
-}
-
-#header-top .contents .hot-keywords h3 a {
-    text-decoration: none;
-    color: black;
     font-size: 17px;
 }
 
@@ -309,6 +304,17 @@ header .contents > a .fa-apple {
     overflow: hidden;
 }
 
+#hot-items #only-items article:hover,
+#hot-items #only-items #add-hot-items:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 4px 4px 7px var(--color-light-gray);
+    cursor: pointer;
+}
+
+#hot-items #only-items article:hover{
+    border: none;
+}
+
 #hot-items #only-items {
     display: grid;
     grid-template-rows: repeat(3, 280px);
@@ -319,7 +325,55 @@ header .contents > a .fa-apple {
 
 #hot-items #only-items article div {
     height: 145px;
-    background: url(https://dnvefa72aowie.cloudfront.net/origin/article/202009/74929a35425c7917c9792524b11381e82f27bb54341ea469b9ae23c3385f7929.webp?q=82&s=300x300&t=crop);
+}
+
+#hot-items #only-items article:nth-child(1) div {
+    background-image: url(https://dnvefa72aowie.cloudfront.net/origin/article/202008/40cbb777357563e47617a9e814f985ce3112c36e719ea9b19d3c8a3ec1c2fbea.webp?q=82&s=300x300&t=crop);
+    background-size: 200px;
+}
+#hot-items #only-items article:nth-child(2) div {
+    background-image: url(https://dnvefa72aowie.cloudfront.net/origin/article/202009/1DF8DF0D26BACE96806135544EB5A3C848DCBD73B75796B5BE9C2FEAB4A5F53D.jpg?q=95&s=1440x1440&t=inside);
+    background-size: 200px;
+}
+#hot-items #only-items article:nth-child(3) div {
+    background-image: url(https://dnvefa72aowie.cloudfront.net/origin/article/202008/981089C095FFA160EF28BEB0CD8406B7CC2026231278EEF84808D4D192BFDA23.jpg?q=95&s=1440x1440&t=inside);
+    background-size: 200px;
+}
+#hot-items #only-items article:nth-child(4) div {
+    background-image: url(https://dnvefa72aowie.cloudfront.net/origin/article/202009/0f6e6de914ad7a7d51391878a58723c6bc0c7fd7fd7eb7cd386cf66ef9b11cb9.webp?q=95&s=1440x1440&t=inside);
+    background-size: 300px;
+    background-position: -30px 0;
+}
+#hot-items #only-items article:nth-child(5) div {
+    background-image: url(https://dnvefa72aowie.cloudfront.net/origin/article/202009/f00654bc4ff7f45600ad3a8414fe557ed1532f795a72c0935822948cee986366.webp?q=95&s=1440x1440&t=inside);
+    background-size: 200px;
+}
+#hot-items #only-items article:nth-child(6) div {
+    background-image: url(https://dnvefa72aowie.cloudfront.net/origin/article/202008/ed0ddb1f2a056b55eecdc3f197f75005207819af8a695f2d4d32d3cf53ada41f.webp?q=95&s=1440x1440&t=inside);
+    background-size: 200px;
+}
+#hot-items #only-items article:nth-child(7) div {
+    background-image: url(https://dnvefa72aowie.cloudfront.net/origin/article/202009/4ed18b8ed98dc7c7df47c7a3c9df9ea78035ca912c01cbceb39d24d44b6ef7ad.webp?q=95&s=1440x1440&t=inside);
+    background-size: 300px;
+}
+#hot-items #only-items article:nth-child(8) div {
+    background-image: url(https://dnvefa72aowie.cloudfront.net/origin/article/202009/ac20f77c015aaaf3f67b99862cb8c72aa78d9c71dabc943124c7788eecfbe357.webp?q=95&s=1440x1440&t=inside);
+    background-size: 200px;
+}
+#hot-items #only-items article:nth-child(9) div {
+    background-image: url(https://dnvefa72aowie.cloudfront.net/origin/article/202009/73CA776BBE2A396A42F989C747EFE8F3C3B3B2067CA8A1B8F8D0E596106B72DC.jpg?q=95&s=1440x1440&t=inside);
+    background-position: -8px -15px;
+    background-size: 200px;
+}
+#hot-items #only-items article:nth-child(10) div {
+    background-image: url(https://dnvefa72aowie.cloudfront.net/origin/article/202008/856FAB5B4E5D43EA2C2E3BF67DBA02DB8C8428CC3BAB8A792432A339F9AB27D3.jpg?q=95&s=1440x1440&t=inside);
+    background-position: 0 -48px;
+    background-size: 200px;
+}
+#hot-items #only-items article:nth-child(11) div {
+    background-image: url(https://dnvefa72aowie.cloudfront.net/origin/article/202008/f85cb4ce42ac7734e1a597590aad591c28ac8f4790f491d45fde65c4c7291473.webp?q=95&s=1440x1440&t=inside);
+    background-position: 0 -5px;
+    background-size: 200px;
 }
 
 #hot-items #only-items article > p:nth-of-type(1) {
@@ -358,7 +412,7 @@ header .contents > a .fa-apple {
     margin-left: 15px;
     font-size: 13px;
     color: var(--main-color-dark-gray);
-    line-height: 35px;
+    line-height: 32px;
 }
 
 #hot-items #only-items #add-hot-items {
@@ -374,7 +428,9 @@ header .contents > a .fa-apple {
 }
 
 #hot-items #only-items #add-hot-items p:nth-child(2) {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     width: 80px;
     font-weight: 700;
+    line-height: 24px;
 }
+
