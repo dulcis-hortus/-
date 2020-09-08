@@ -1,4 +1,5 @@
 :root {
+    /* color */
     --main-color-orange: #FF8A3D;
     --color-light-gray: #CACFD2;
     --color-background-gray: #f3f3f3; 
@@ -6,15 +7,15 @@
     --main-color-white: #ffffff;
     --main-color-red: #F92929;
     --main-color-dark-gray: #808B96;
+    --color-background-beige: #fff4eb;
+    /* font-size */
+    --font-size-medium: 32px;
 }
 
 .hide {
     position: absolute;
-    left: 9999px;
-}
+    left: 9999px
 
-body {
-    height: 2100px;
 }
 
 
@@ -33,6 +34,12 @@ input:focus {
     outline-width: 0;
 }
 
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+/* 
 input:focus::-webkit-input-placeholder {
     color: transparent;
 }
@@ -47,7 +54,7 @@ input:focus:-ms-input-placeholder {
 
 input:focus::-ms-input-placeholder {
     color: transparent;
-}
+} */
 
 input::placeholder {
     color: #A6ACAF ;
@@ -281,7 +288,7 @@ header .contents > a .fa-apple {
 }
 
 #hot-items h3 {
-    font-size: 32px;
+    font-size: var(--font-size-medium);
     margin-top: 120px;
     margin-bottom: 40px;
 }
@@ -306,8 +313,8 @@ header .contents > a .fa-apple {
 
 #hot-items #only-items article:hover,
 #hot-items #only-items #add-hot-items:hover {
-    transform: translate(-4px, -4px);
-    box-shadow: 4px 4px 7px var(--color-light-gray);
+    transform: translate(-3px, -5px);
+    box-shadow: 3px 5px 7px var(--color-light-gray);
     cursor: pointer;
 }
 
@@ -434,3 +441,130 @@ header .contents > a .fa-apple {
     line-height: 24px;
 }
 
+
+/* section id="near-market" */
+#near-market {
+    margin-top: 135px;
+    height: 240px;
+    background: var(--color-background-beige);
+    display: flex;
+    justify-content: center;
+}
+
+#near-market .center-layout {
+    width: 910px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    /* max-width: 1300px; */
+} 
+
+#near-market .center-layout .layout {
+    align-self: center;
+}
+
+#near-market .layout .logo {
+    width: 175px;
+    margin-bottom: 5px;
+}
+
+#near-market .layout p {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#near-market div .layout button {
+    border: none;
+    background: var(--main-color-orange);
+    color: var(--main-color-white);
+    padding: 15px 6px;
+    font-size: 19px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+#near-market div:nth-child(2) img{
+    width: 350px;
+    position: absolute;
+    right:0; bottom: 43px;
+}    
+
+
+/* section id="advantages" */
+#advantages {
+    height: 1280px;
+    background: #f7f9fa;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#advantages .title {
+    font-size: var(--font-size-medium);
+    margin-top: 120px;
+}
+
+#advantages .title::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    bottom: 0;
+    background: var(--main-color-orange);
+    margin: 45px auto;
+}
+
+#advantages .layout {
+    display: grid;
+    grid-template-rows: repeat(2, 400px);
+    grid-template-columns: repeat(3, 240px);
+    gap: 90px 130px;
+    margin-top: 15px;
+}
+
+#advantages .layout .one-advantage {
+    width: 240px;
+    height: 400px;
+    /* border: 1px solid; */
+}
+
+#advantages .layout .one-advantage .img {
+    background-size: 250px;
+    width: 250px;
+    height: 250px;
+    /* border: 1px solid black; */
+    /* position: relative; */
+} 
+
+#advantages .layout .one-advantage:nth-child(1) .img {
+    background-image: url("차이점_1.png");
+}
+#advantages .layout .one-advantage:nth-child(2) .img {
+    background-image: url("차이점_2.png");
+}
+#advantages .layout .one-advantage:nth-child(3) .img {
+    background-image: url("차이점_3.png");
+}
+#advantages .layout .one-advantage:nth-child(4) .img {
+    background-image: url("차이점_4.png");
+}
+#advantages .layout .one-advantage:nth-child(5) .img {
+    background-image: url("차이점_5.png");
+}
+#advantages .layout .one-advantage:nth-child(6) .img {
+    background-image: url("차이점_6.png");
+}
+
+
+#advantages .layout .one-advantage h5 {
+    font-size: 22px;
+    margin-top: 32px;
+    margin-bottom: 10px;
+}
+
+#advantages .layout .one-advantage p {
+    line-height: 25px;
+}
