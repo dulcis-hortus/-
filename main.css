@@ -9,7 +9,9 @@
     --main-color-dark-gray: #808B96;
     --color-background-beige: #fff4eb;
     /* font-size */
-    --font-size-medium: 32px;
+    --font-size-medium: 33px;
+    /* margin */
+    --margin-title-bar: 40px;
 }
 
 .hide {
@@ -27,6 +29,11 @@
 
 a {
     text-decoration: none;
+}
+
+ul, 
+li {
+    list-style: none;
 }
 
 textarea:focus,
@@ -297,8 +304,9 @@ header .contents > a .fa-apple {
     content: '';
     display: block;
     width: 70px;
-    border-bottom: 2px solid var(--main-color-orange);
-    margin: 40px auto 15px;
+    height: 2px;
+    background: var(--main-color-orange);
+    margin: var(--margin-title-bar) auto;
 }
 
 #hot-items #only-items article,
@@ -514,7 +522,7 @@ header .contents > a .fa-apple {
     height: 2px;
     bottom: 0;
     background: var(--main-color-orange);
-    margin: 45px auto;
+    margin: var(--margin-title-bar) auto;
 }
 
 #advantages .layout {
@@ -567,4 +575,57 @@ header .contents > a .fa-apple {
 
 #advantages .layout .one-advantage p {
     line-height: 25px;
+}
+
+
+/* section id="feedbacks" */
+#feedbacks {
+    height: 1110px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#feedbacks .title {
+    font-size: var(--font-size-medium);
+    margin-top: 130px;
+}
+
+#feedbacks .title::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    bottom: 0;
+    background: var(--main-color-orange);
+    margin: var(--margin-title-bar) auto 45px;
+}
+
+#feedbacks .contents {
+    font-size: 17px;
+    display: grid;
+    grid-template-rows: repeat(3, 180px);
+    grid-template-columns: repeat(3, 300px);
+    gap: 95px 60px;
+    align-self: center;
+}
+
+#feedbacks .contents li {
+    text-align: justify;
+}
+
+#feedbacks .contents li .img {
+    height: 30px;
+    width: 40px;
+    background: url('double quote.png') no-repeat;
+    background-position: 10px 3px;
+}
+
+#feedbacks .contents li p {
+    margin: 5px 0 0 20px;
+    line-height: 28px;
+}
+
+#feedbacks .contents li p span {
+    color: var(--main-color-orange);
 }
