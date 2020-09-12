@@ -10,6 +10,7 @@
     --color-background-beige: #fff4eb;
     /* font-size */
     --font-size-medium: 34px;
+    --font-size-small: 30px;
     /* margin */
     --margin-title-bar: 40px;
 }
@@ -29,6 +30,7 @@
 
 a {
     text-decoration: none;
+    /* color: var(--main-color-black); */
 }
 
 ul, 
@@ -580,7 +582,7 @@ header .contents > a .fa-apple {
 
 /* section id="feedbacks" */
 #feedbacks {
-    height: 1140px;
+    height: 1130px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -634,27 +636,29 @@ header .contents > a .fa-apple {
 
 /* section id="questions" */
 #questions {
-    height: 220px;
-    background: var(--color-background-gray);
+    height: 180px;
     display: flex;
     justify-content: center;
+    background: var(--color-background-gray);
 }
 
 #questions .layout {
-    width: 1110px;
+    width: 1120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 #questions .layout .title {
-    font-size: var(--font-size-medium);
-    margin-left: 10px;
+    font-size: var(--font-size-small);
+    margin: 0 35px;
 }
 
 #questions .layout div {
     display: flex;
     align-items: center;
+    margin: 0 55px;
 }
 
 #questions .layout div img{
@@ -665,4 +669,58 @@ header .contents > a .fa-apple {
 #questions .layout div a {
     font-size: 22px;
     font-weight: bolder;
+    color: var(--main-color-black);
+}
+
+/* footer id="informations" */
+#informations {
+    height: 310px;
+    background: #424242;
+    font-size: 17px;
+}
+
+#informations .center-layout {
+    padding: 40px 0 10px 60px;
+}
+
+#informations .center-layout a {
+    color: #e0e0dc;
+}
+
+#informations .center-layout ul li {
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 10px;
+}
+
+#informations .center-layout ul li:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 17px;
+    background:#757573;
+    right: 0; bottom: 0;
+    margin-left: 10px;
+}
+
+#informations .center-layout .second_line li {
+    margin-bottom: 20px;
+}
+
+#informations .center-layout .first_line li a {
+    font-weight: 700;
+}
+
+#informations .center-layout .sns {
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+#informations .center-layout .sns a {
+    margin-right: 20px;
+}
+
+#informations .center-layout .layout {
+    font-size: 15px;
+    color: #858582;
 }
