@@ -88,7 +88,10 @@ header {
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 4px var(--color-light-gray);
-    position: relative;
+    background: var(--main-color-white);
+    position: sticky;
+    top: 0;
+    z-index: 5;
     /* position: fixed;
     background: var(--main-color-white); */
     /* position: sticky;
